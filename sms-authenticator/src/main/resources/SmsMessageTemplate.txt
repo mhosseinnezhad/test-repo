@@ -1,0 +1,12 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://webservice.smsrelay.armaghan.net/">
+   <soap:Header/>
+   <soap:Body>
+      <web:sendMessageOneToMany>
+         <username>${CLIENT_ID}</username>
+         <password>${CLIENT_SECRET}</password>
+         <originator>500042712000</originator>
+         <destination>${PHONE_NUMBER}</destination>
+         <content>${MESSAGE_BODY}</content>
+      </web:sendMessageOneToMany>
+   </soap:Body>
+</soap:Envelope>
